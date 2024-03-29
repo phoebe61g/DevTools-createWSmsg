@@ -13,3 +13,6 @@ Type 'queryObjects(WebSocket)' and store the object you want as a global variabl
 ## Usage
 Sample codes can be directly run in the console, and you can also modify some variables as needed.
 The initial sample codes provided aim to measure the time difference between when messages are sent and when they are echoed back. More operations may be added in the future.
+
+## Motivation
+The Mist Remote Shell utilizes Websockets to facilitate command transmission. Each character input by the administrator is transmitted to the device in real-time. Upon receiving the character, the device sends back the displayed character to the Remote Shell for the administrator to see. This round-trip process enables us to measure the time it takes for managed traffic to travel between Mist Cloud and the device.
